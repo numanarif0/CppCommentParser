@@ -1,0 +1,5 @@
+# ninja log v6
+3	2175	7756598770617190	CMakeFiles/cmtParser.dir/main.cpp.obj	defd955e0e894d40
+10	2789	7756598770700512	CMakeFiles/cmtParser.dir/Parser.cpp.obj	b8a04fdfa2ea9059
+7	3060	7756598770667198	CMakeFiles/cmtParser.dir/MainWindow.cpp.obj	9bec645f3e77dcc0
+3061	3274	7756598801195180	cmtParser.exe	d61aae1a5f92957

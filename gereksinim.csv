@@ -1,0 +1,10 @@
+Requirement_ID,Title,Description,Status,Source_File,Function_Name
+HL_CONQ_CAN_SR27,"Get CAN1 Config","Get the initial or current values of the CAN1 configuration registers.",Implemented,can.c,can1GetConfigValue
+HL_CONQ_CAN_SR28,"Get CAN2 Config","Get the initial or current values of the CAN2 configuration registers.",Implemented,can.c,can2GetConfigValue
+HL_CONQ_CAN_SR29,"Get CAN3 Config","Get the initial or current values of the CAN3 configuration registers.",Implemented,can.c,can3GetConfigValue
+HL_CONQ_CAN_SR30,"Get CAN4 Config","Get the initial or current values of the CAN4 configuration registers.",Implemented,can.c,can4GetConfigValue
+HL_CONQ_CAN_SR5,"Transmit CAN Message","Transmits a CAN message using a specific message box.",Implemented,can.c,canTransmit
+HL_CONQ_CAN_SR6,"Get CAN Data","Gets data from a received CAN message.",Implemented,can.c,canGetData
+HL_CONQ_CAN_SR7,"Check TX Pending","Checks to see if the Tx message box has a pending Tx request.",Implemented,can.c,canIsTxMessagePending
+HL_CONQ_CAN_SR8,"Check RX Arrived","Checks to see if the Rx message box has pending Rx data.",Implemented,can.c,canIsRxMessageArrived
+HL_CONQ_CAN_SR9,"Check Message Box Valid","Checks to see if the message box is valid for operation.",Implemented,can.c,canIsMessageBoxValid

@@ -1,0 +1,7 @@
+# Ortam değişkenleri
+.env
+
+# İşletim sistemi dosyaları
+.DS_Store
+# Loglar
+*.log

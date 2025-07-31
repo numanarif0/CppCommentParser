@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkWindow" id="main_window">
+    <property name="title">Comment Parser</property>
+    <property name="default-width">1024</property>
+    <property name="default-height">768</property>
+    <child>
+      <object class="GtkBox" id="main_container">
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+        <property name="margin-start">10</property>
+        <property name="margin-end">10</property>
+        <child>
+          <object class="GtkLabel" id="status_label">
+            <property name="label">Ready</property>
+            <property name="xalign">0</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkGrid" id="top_grid">
+            <property name="column-spacing">10</property>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="width-request">250</property>
+                <property name="halign">start</property>
+                <child>
+                    <object class="GtkLabel" id="req_file_tracker">
+                        <property name="label">No req file</property>
+                        <property name="wrap">true</property>
+                        <property name="xalign">0</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkLabel" id="file_count_label">
+                        <property name="label">0 files</property>
+                        <property name="xalign">0</property>
+                    </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="button_box">
+                <property name="orientation">horizontal</property>
+                <property name="spacing">10</property>
+                <property name="halign">end</property>
+                <child>
+                  <object class="GtkButton" id="select_files_button">
+                    <property name="label">Select files</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="extract_button">
+                    <property name="label">Extract</property>
+                    <property name="sensitive">false</property>
+                  </object>
+                  
+                </child>
+                <child>
+                  <object class="GtkButton" id="delete_button">
+                    <property name="label">Delete</property>
+                  </object>
+                </child>
+                 <child>
+            <object class="GtkButton" id="export_csv_button">
+              <property name="label" translatable="yes">Export as CSV</property>
+             
+            </object>
+          </child>
+          <child>
+            <object class="GtkButton" id="export_pdf_button">
+              <property name="label" translatable="yes">Export as PDF</property>
+              
+            </object>
+          </child>
+                <child>
+                  <object class="GtkButton" id="requirements_select_button">
+                    <property name="label">Select requirements file</property>
+                  </object>
+                </child>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="lists_box">
+            <property name="orientation">horizontal</property>
+            <property name="spacing">20</property>
+            <property name="vexpand">true</property>
+            <child>
+              <object class="GtkScrolledWindow">
+                <property name="width-request">250</property>
+                <property name="hscrollbar-policy">automatic</property>
+                <property name="vscrollbar-policy">automatic</property>
+                <child>
+                  <object class="GtkListBox" id="file_list_box"></object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow">
+                <property name="hexpand">true</property>
+                <property name="hscrollbar-policy">automatic</property>
+                <property name="vscrollbar-policy">automatic</property>
+                <child>
+                  <object class="GtkListBox" id="issues_list_box"></object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

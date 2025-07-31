@@ -1,0 +1,9 @@
+/** @fn void canInit(void)
+* @brief Initializes CAN Driver
+* * This function initializes the CAN driver.
+* @note SourceId : CAN_SourceId_001
+* @note DesignId : CAN_DesignId_001
+* @req HL_CONQ_CAN_SR4
+* @retval HAL_OK       Operation successful.
+* @retval HAL_ERROR    Operation failed.
+*/
